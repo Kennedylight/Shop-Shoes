@@ -182,7 +182,7 @@
             </div>
             <div class="w-full h-[86%] flex justify-center items-center">
                 <div
-                    class="w-[95%] h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-y-auto px-2">
+                    class="w-[95%] h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-y-scroll custom-scrollbar px-2">
 
                     <div class="h-auto bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
                         v-for="i in chaussures" :key="i">
@@ -213,7 +213,7 @@
                             </div>
 
                             <div class="flex items-center justify-between">
-                                <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                <span class="text-XL font-bold text-gray-900 dark:text-white">XAF 5000</span>
                                 <a href="#"
                                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                     Add to cart
@@ -451,6 +451,19 @@
 
     </div>
 </template>
+<style>
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.custom-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+</style>
+
+
 <script>
 
 export default {
