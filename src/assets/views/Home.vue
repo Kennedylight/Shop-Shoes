@@ -185,8 +185,8 @@
                     class="w-[95%] h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-y-auto px-2">
 
                     <div class="h-auto bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-                        v-for="i in 20" :key="i">
-                        <img class="h-48 w-full object-cover rounded-t-lg" src="/img/ayanokoji.jpg"
+                        v-for="i in chaussures" :key="i">
+                        <img class="h-48 w-full object-cover rounded-t-lg" :src="'/img/'+i.img"
                             alt="product image" />
 
                         <div class="px-5 pb-5">
@@ -459,6 +459,15 @@ export default {
             value1: true,
             value2: true,
             value3: true,
+            chaussures:[
+                {img:"chaussure1.jpg"},
+                {img:"chaussure2.jpg"},
+                {img:"chaussure3.jpg"},
+                {img:"chaussure4.jpg"},
+                {img:"chaussure5.jpg"},
+                {img:"chaussure6.jpg"},
+                {img:"chaussure7.jpg"},
+            ]
         }
     },
     mounted() {
