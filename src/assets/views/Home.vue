@@ -1,75 +1,9 @@
 <template>
     <div class="w-full h-full  ">
         <!-- Header -->
-        <header class="bg-white w-full fixed top-0 left-0 z-50 shadow-sm">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-                <!-- Logo -->
-                <h1 class="text-2xl font-bold">PressMart.</h1>
+        
 
-                <!-- Menu Desktop -->
-                <nav class="hidden md:flex space-x-6 font-semibold">
-                    <a href="#" class="hover:text-blue-600">Homes</a>
-                    <a href="#" class="hover:text-blue-600">Shop</a>
-                    <a href="#" class="hover:text-blue-600">Blocs</a>
-                    <a href="#" class="hover:text-blue-600">Buy</a>
-                </nav>
-
-                <!-- Icons -->
-                <div class="flex space-x-3">
-                    <!-- User -->
-                    <div class="relative px-2 py-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.1a7.5 7.5 0 0115 0 17.9 17.9 0 01-15 0z" />
-                        </svg>
-                    </div>
-
-                   
-
-                    <!-- Notification -->
-                    <div class="relative px-2 py-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M21 8.25c0-2.49-2.1-4.5-4.69-4.5-1.93 0-3.59 1.13-4.31 2.73C11.3 4.88 9.63 3.75 7.69 3.75 5.1 3.75 3 5.77 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                        </svg>
-                        <div
-                            class="w-4 h-4 bg-blue-400 text-white rounded-full absolute top-0 right-0 text-[10px] font-bold flex items-center justify-center">
-                            10
-                        </div>
-                    </div>
-
-                    <!-- Another Icon -->
-                    <div class="relative px-2 py-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.1a7.5 7.5 0 0115 0 17.9 17.9 0 01-15 0z" />
-                        </svg>
-                        <div
-                            class="w-4 h-4 bg-blue-400 text-white rounded-full absolute top-0 right-0 text-[10px] font-bold flex items-center justify-center">
-                            90
-                        </div>
-                    </div>
-
-                    <!-- Mobile Menu Button -->
-                    <button class="md:hidden" id="menu-btn">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Menu Mobile -->
-            <div id="mobile-menu" class="md:hidden hidden bg-white px-6 py-4 space-y-3 font-semibold shadow-lg">
-              <a href="#" class="block">Homes</a>
-                    <a href="#" class="block">Shop</a>
-                    <a href="#" class="block">Blocs</a>
-                    <a href="#" class="block">Buy</a>
-            </div>
-        </header>
-
-        <div class="w-full h-[10%]"></div>
+        
         <div class="w-full min-h-[75vh] bg-[#F8F8F8] flex justify-center items-center py-10">
             <div class="w-[90%] flex flex-col md:flex-row h-full items-center">
 
@@ -286,7 +220,7 @@
                     data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
                     <h2 id="accordion-color-heading-1">
                         <button type="button"
-                            class="flex border-b  border-gray-700 items-center justify-between w-full p-5 font-medium rtl:text-right dark:hover:bg-gray-800 gap-3"
+                            class="flex border-b  border-gray-700 items-center justify-between w-full p-5 font-medium rtl:text-right  gap-3"
                             data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                             aria-controls="accordion-color-body-1" @click="value1 = !value1">
                             <span>Comment passer une commande sur l’application ?</span>
@@ -310,10 +244,10 @@
                     </div>
                     <h2 id="accordion-color-heading-2">
                         <button type="button"
-                            class="flex border-b border-gray-700 items-center justify-between w-full p-5 font-medium rtl:text-right dark:hover:bg-gray-800 gap-3"
+                            class="flex border-b border-gray-700 items-center justify-between w-full p-5 font-medium rtl:text-right  gap-3"
                             data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                             aria-controls="accordion-color-body-1" @click="value2 = !value2">
-                            <span>Is there a Figma file available?</span>
+                            <span> Pourquoi utiliser Shoes Selle ?</span>
                             <svg data-accordion-icon class="w-3 h-3  shrink-0" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"
                                 :class="value2 == false ? '' : 'rotate-180'">
@@ -325,11 +259,8 @@
                     <div id="accordion-color-body-2" :class="value2 == false ? '' : 'hidden duration-700 transition-all'"
                         aria-labelledby="accordion-color-heading-2">
                         <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and
-                                designed using
-                                the Figma software so everything you see in the library has a design equivalent in our
-                                Figma
-                                file.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Parce que nous combinons rapidité, qualité et style,
+                                 pour que vous puissiez toujours marcher avec assurance.</p>
                             <p class="text-gray-500 dark:text-gray-400">Check out the <a
                                     href="https://flowbite.com/figma/" class=" hover:underline">Figma design system</a>
                                 based on the utility classes from Tailwind
@@ -338,10 +269,10 @@
                     </div>
                     <h2 id="accordion-color-heading-3">
                         <button type="button"
-                            class="flex border-b border-gray-700 items-center justify-between w-full p-5 font-medium rtl:text-right dark:hover:bg-gray-800 gap-3"
+                            class="flex border-b border-gray-700 items-center justify-between w-full p-5 font-medium rtl:text-right  gap-3"
                             data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                             aria-controls="accordion-color-body-1" @click="value3 = !value3">
-                            <span>What are the differences between Flowbite and Tailwind UI?</span>
+                            <span>Qu'est-ce qui rend Shoes Seller unique ?</span>
                             <svg data-accordion-icon class="w-3 h-3  shrink-0" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"
                                 :class="value3 == false ? '' : 'rotate-180'">
@@ -353,24 +284,9 @@
                     <div id="accordion-color-body-3" :class="value3 == false ? '' : 'hidden duration-700 transition-all'"
                         aria-labelledby="accordion-color-heading-3">
                         <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
-                                components
-                                from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid
-                                product.
-                                Another difference is that Flowbite relies on smaller and standalone components, whereas
-                                Tailwind UI offers sections of pages.</p>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
-                                Flowbite,
-                                Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from
-                                using the
-                                best of two worlds.</p>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-                            <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                                <li><a href="https://flowbite.com/pro/" class=" hover:underline">Flowbite Pro</a></li>
-                                <li><a href="https://tailwindui.com/" rel="nofollow" class=" hover:underline">Tailwind
-                                        UI</a>
-                                </li>
-                            </ul>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Une sélection exclusive de chaussures, des nouveautés 
+                                en avant-première, et un service client toujours à votre écoute.</p>
+                           
                         </div>
                     </div>
                 </div>
